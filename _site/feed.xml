@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-09T20:44:25-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">KeeWee Solutions Inc.</title><subtitle>Sustainability by Analytical Engine</subtitle><author><name>Your Name</name></author><entry><title type="html">CEMS Extractive System</title><link href="http://localhost:4000/cems/CEMS-Extractive-system/" rel="alternate" type="text/html" title="CEMS Extractive System" /><published>2020-05-16T00:00:00-06:00</published><updated>2020-05-16T00:00:00-06:00</updated><id>http://localhost:4000/cems/CEMS-Extractive-system</id><content type="html" xml:base="http://localhost:4000/cems/CEMS-Extractive-system/">&lt;p&gt;Extractive systems were the first type of CEMS developed for continuous emissions monitoring. Two types of extractive systems&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;fully extractive, source-level systems&lt;/li&gt;
+  &lt;li&gt;dilution systems.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There are three types of source-level extractive systems:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;hot/wet system. it uses a heated line to transport the flue gas to an analyzer that incorporates a sample cell heated above the flue gas temperature. The gas delivered to the analyzer are both hot and wet. The particulate matter needs to be removed with a course filters located at the probe.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;cool/dry systems with conditioning at the probe.&lt;/li&gt;
+  &lt;li&gt;cool/dry systems with conditioning at the CEMS shelter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Gas is conditioned before it enters the analyzer. The gas temperature is reduced to ambient temperature temperature and moisture is removed.&lt;/p&gt;
+
+&lt;p&gt;Reference: James A. Jahnke. 2000. Continuous Emissions Monitoring. Second Edition&lt;/p&gt;</content><author><name>Your Name</name></author><category term="CEMS" /><category term="CEMS" /><category term="Emissions monitoring" /><summary type="html">CEMS extractive system: source-level extractive systems and dilution extractive system</summary></entry><entry><title type="html">Emission Value Correction</title><link href="http://localhost:4000/cems/emission-value-correction/" rel="alternate" type="text/html" title="Emission Value Correction" /><published>2020-05-10T00:00:00-06:00</published><updated>2020-05-10T00:00:00-06:00</updated><id>http://localhost:4000/cems/emission-value-correction</id><content type="html" xml:base="http://localhost:4000/cems/emission-value-correction/">&lt;p&gt;The equations are taken from &lt;a href=&quot;https://www.amazon.ca/Continuous-Emission-Monitoring-James-Jahnke/dp/0471292273&quot;&gt;Continuous Emission Monitoring&lt;/a&gt; by James A. Jahnke (April 3, 2000).&lt;/p&gt;
+
+&lt;h2 id=&quot;correct-wet-basis-concentrations-to-dry-basis-concentrations&quot;&gt;Correct wet-basis concentrations to dry-basis concentrations&lt;/h2&gt;
+
+\[c_d = \frac{c_w}{1-m_{Flue Gas}}\]
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;\(c_d\) = dry-basis concentration value (ppm or percent)&lt;/li&gt;
+  &lt;li&gt;\(c_w\) = wet-basis concentration value (ppm or percent)&lt;/li&gt;
+  &lt;li&gt;\(m_{Flue Gas}\) = moisture fraction of the flue gas&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To correct a concentration value for dilution, emissions can be expressed in three ways; with reference to a specified CO&lt;sub&gt;2&lt;/sub&gt;, O&lt;sub&gt;2&lt;/sub&gt;, or excess air value.&lt;/p&gt;
+
+&lt;h2 id=&quot;co2-correction-corrected-to-12-co2&quot;&gt;CO&lt;sub&gt;2&lt;/sub&gt; correction (Corrected to 12% CO&lt;sub&gt;2&lt;/sub&gt;)&lt;/h2&gt;
+
+\[c_{d(12\% CO_2)} = c_w \times \frac{12}{\%CO_{2w}} =c_d \times \frac{12}{\%CO_{2d}}\]
+
+&lt;p&gt;The concentration can be determined using either a wet-basis or a dry-basis concentration value as long as the emissions and CO&lt;sub&gt;2&lt;/sub&gt; are both measured on a wet basis or on a dry basis.&lt;/p&gt;
+
+&lt;h2 id=&quot;o26-o2&quot;&gt;O&lt;sub&gt;2&lt;/sub&gt;(6% O&lt;sub&gt;2&lt;/sub&gt;)&lt;/h2&gt;
+
+\[c_{d(6\% O_2)} = c_d \times \frac{20.9 - 6.0}{20.9 - \%O_{2d}}\]
+
+&lt;h2 id=&quot;excess-air-correction&quot;&gt;Excess Air Correction&lt;/h2&gt;
+
+&lt;p&gt;Excess Air (EA) corrects to 50%.&lt;/p&gt;
+
+\[c_{d(50\% EA)} = c_d \times \frac{100+\%EA}{150}\]
+
+\[\%EA = \frac{\%O_2 - 0.5\%CO}{0.266\%N_2 - \%O_2 + 0.5\%CO}\]
+
+&lt;p&gt;CO% is usually negligible, this calculation requires a dry O&lt;sub&gt;2&lt;/sub&gt; measurement or a wet O&lt;sub&gt;2&lt;/sub&gt; measurement&lt;/p&gt;</content><author><name>Your Name</name></author><category term="CEMS" /><category term="Emissions Correction" /><summary type="html">Correct emissions values from a wet basis to a dry basis at 12% CO2, 6% O2 or 50% excess air</summary></entry><entry><title type="html">Combined Monthly Petrinex Data into One File</title><link href="http://localhost:4000/data%20science/combined-data-from-Petrinex/" rel="alternate" type="text/html" title="Combined Monthly Petrinex Data into One File" /><published>2020-05-03T00:00:00-06:00</published><updated>2020-05-03T00:00:00-06:00</updated><id>http://localhost:4000/data%20science/combined-data-from-Petrinex</id><content type="html" xml:base="http://localhost:4000/data%20science/combined-data-from-Petrinex/">&lt;p&gt;Petrinex is a data warehouse &lt;a href=&quot;https://www.petrinex.ca/PD/Pages/default.aspx&quot;&gt;https://www.petrinex.ca/PD/Pages/default.aspx&lt;/a&gt;. It has monthly volumetric data from Oil and Gas operations in Alberta, such as production, fuel use, flare, vent data. The volumetric data can be here &lt;a href=&quot;https://www.petrinex.ca/PD/Pages/APD.aspx&quot;&gt;https://www.petrinex.ca/PD/Pages/APD.aspx&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note: data for Saskatchewan and British Columbia are not publicly available.&lt;/p&gt;
+
+&lt;p&gt;Check all the monthly files&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;glob&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;files&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'*.csv'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;files&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;macOS is sensitive to the letters *.csv or *.CSV.&lt;/li&gt;
+  &lt;li&gt;Windows does not differentiate csv or CSV.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Combine all monthly files into one file&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;df_all&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;low_memory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'*.CSV'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)],&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;df_all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;col_removal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'ReportingFacilityProvinceState'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'ReportingFacilityLocation'&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;'FacilityLegalSubdivision'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'FacilitySection'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'FacilityTownship'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;'FacilityRange'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'FacilityMeridian'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'SubmissionDate'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;'CCICode'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'ProrationProduct'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'ProrationFactor'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;'FromToIDProvinceState'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df_all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;drop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col_removal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Petrinex_2019.csv'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Your Name</name></author><category term="Data Science" /><category term="Petrinex" /><category term="Data Science" /><category term="Oil and Gas" /><summary type="html">Petrinex Data</summary></entry></feed>
