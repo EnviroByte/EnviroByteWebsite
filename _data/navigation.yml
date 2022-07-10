@@ -1,0 +1,16 @@
+# main links
+main:
+  - title: "Data Science"
+    url: /data-science/
+  - title: "Regulatory"
+    url: /regulatory/
+  - title: "Sustainability"
+    url: /sustainability/
+  - title: "Contact"
+    url: /contact/
+  #- title: "Posts"
+  #  url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
